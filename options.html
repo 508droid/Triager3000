@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Extension Options</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #929296;
+            margin: 0;
+            padding: 20px;
+            border: 5px solid #f58220;
+        }
+
+        .option {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Triager v1.6.3</h1>
+    <div class="option">
+        <label for="hotkey">Hotkey:</label>
+        <input type="text" id="hotkey" />
+    </div>
+    <div class="option">
+        <label for="queue">Default Queue:</label>
+        <input type="text" id="queue" />
+    </div>
+    <div class="option">
+        <label for="primaryResource">Default Primary Resource:</label>
+        <input type="text" id="primaryResource" />
+    </div>
+    <div class="option">
+        <label for="thankDan">Thank Dan:</label><input type="checkbox" id="thankDan" />
+    </div>
+    <button id="save">Save</button>
+    <div class="option">
+        <br>
+        <label for="faq1">Setup:</label>
+        <br>
+        <br>
+        <label for="faq2">Set Hotkey to your desired key combination (e.g. Ctrl+Shift+Y)</label>
+        <br>
+        <br>
+        <label for="faq3">Set Queue to your default ticket queue (e.g. Service Desk)</label>
+        <br>
+        <br>
+        <label for="faq4">Set Primary Resource to your full name as it appears in AutoTask (e.g. Rex Marchant)</label>
+        <br>
+        <br>
+        <label for="faq5">This extension collects error logs to improve functionality. No personal data is stored or transmitted. Logs are sent securely to our server and used solely for debugging purposes. To report bugs please message Dan Kershaw on Teams and include the time the error happened</label>
+    </div>
+    <script src="options.js"></script>
+</body>
+
+</html>

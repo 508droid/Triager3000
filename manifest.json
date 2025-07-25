@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "The Triager 3000",
+  "version": "1.6.3",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "permissions": ["storage", "activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "options.html"
+  },
+  "host_permissions": [
+    "https://*.autotask.net/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://*.autotask.net/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  }
+}
